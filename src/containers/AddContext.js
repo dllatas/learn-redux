@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { addContext } from '../actions';
+import { addContext, fetchPosts } from '../actions';
 
 let AddContext = ({ dispatch }) => {
 
@@ -15,12 +15,19 @@ let AddContext = ({ dispatch }) => {
                         return
                     }*/
                 
-                    dispatch(addContext('Macro economics'))
+                    dispatch(addContext('Macro economics'));
                     //input.value = ''
+                    dispatch(fetchPosts('reactjs'))
+                        .then(() => console.log(store.getState()));
                 }}
             >
                 
-                <button type="submit">Add Context</button>
+            <button type="submit">Add Context</button>
+
+
+                
+
+
             </form>
         </div>
     )
