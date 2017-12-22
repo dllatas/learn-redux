@@ -27,15 +27,16 @@ export function invalidateSubreddit(subreddit) {
 
 export const REQUEST_POSTS = 'REQUEST_POSTS'
 
-function requestPosts(subreddit) {
+/*function requestPosts(subreddit) {
   return {
     type: REQUEST_POSTS,
     subreddit
   }
-}
+}*/
 
 export const RECEIVE_POSTS = 'RECEIVE_POSTS'
 
+/*
 function receivePosts(subreddit, json) {
   return {
     type: RECEIVE_POSTS,
@@ -43,4 +44,4 @@ function receivePosts(subreddit, json) {
     posts: json.data.children.map(child => child.data),
     receivedAt: Date.now()
   }
-}
+}*/

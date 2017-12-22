@@ -53,4 +53,4 @@ const postsBySubreddit = (state = {}, action) => {
 
 };
 
-export default { selectedSubreddit, postsBySubreddit }
+export { selectedSubreddit, postsBySubreddit }
